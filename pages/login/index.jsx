@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './login.module.css';
+import Navbar from '../../components/navbar/navbar.jsx';
 
 const images = [
   '/zx101.png',
@@ -36,6 +37,7 @@ const Login = () => {
           backgroundImage: `url(${images[currentImageIndex]})`,
         }}
       />
+      <Navbar />
       <div className={styles.loginForm}>
         <h1>Login</h1>
         <form>
@@ -51,6 +53,13 @@ const Login = () => {
             Log In
           </button>
         </form>
+        <p className={styles.notRegisteredText}>Not registered yet?</p>
+        <button
+          className={styles.registerButton}
+          onClick={() => (window.location.href = '/register')}
+        >
+          Signup
+        </button>
       </div>
     </div>
   );
