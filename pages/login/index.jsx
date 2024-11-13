@@ -52,14 +52,14 @@ const Login = () => {
           <button type="submit" className={styles.loginButton}>
             Log In
           </button>
+          <p className={styles.notRegisteredText}>Not registered yet?</p>
+          <button
+            className={styles.registerButton}
+            onClick={() => (window.location.href = '/register')}
+          >
+            Signup
+          </button>
         </form>
-        <p className={styles.notRegisteredText}>Not registered yet?</p>
-        <button
-          className={styles.registerButton}
-          onClick={() => (window.location.href = '/register')}
-        >
-          Signup
-        </button>
       </div>
     </div>
   );

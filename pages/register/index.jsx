@@ -68,14 +68,14 @@ const Register = () => {
           <button type="submit" className={styles.registerButton}>
             Sign Up
           </button>
+          <p className={styles.alreadyRegisteredText}>Already registered?</p>
+          <button
+            className={styles.loginButton}
+            onClick={() => (window.location.href = '/')}
+          >
+            Login
+          </button>
         </form>
-        <p className={styles.alreadyRegisteredText}>Already registered?</p>
-        <button
-          className={styles.loginButton}
-          onClick={() => (window.location.href = '/')}
-        >
-          Login
-        </button>
       </div>
     </div>
   );

@@ -6,9 +6,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  color: yellow;
+  color: rgb(231, 231, 0);
   background-size: cover;
-  background-color: black;
   background-repeat: no-repeat;
   transition: background-position 0.1s;
   overflow: hidden;
@@ -43,24 +42,25 @@
 }
 
 .registerForm {
-  background: rgba(17, 28, 51, 0.8);
+  background: rgba(31, 0, 0, 0.65);
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  width: 60%;
-  height: 70%;
+  width: 30%;
+  height: 55%;
   position: relative;
   z-index: 1;
-}
-
-.registerForm h1 {
-  color: #eeff00d2;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .formGroup {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .formGroup label {
@@ -71,20 +71,20 @@
 }
 
 .formGroup input {
-  width: 100%;
+  width: 200%;
   padding: 8px;
-  border: 1px solid #5e5e5e;
+  border: 1px solid rgb(231, 231, 0);
   border-radius: 20px;
 }
 
 .registerButton {
-  width: 100%;
-  padding: 10px;
+  width: 50%;
+  margin-top: 10px;
   background-color: #003d7e;
-  color: white;
-  border: none;
+  color: rgb(231, 231, 0);
+  border: 1px solid rgb(231, 231, 0);
   border-radius: 30px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
 }
 
@@ -98,17 +98,17 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  color: rgb(179, 0, 0);
+  color: rgb(255, 94, 0);
 }
 
 .loginButton {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #004e12;
-  color: white;
-  border: none;
+  color: rgb(231, 231, 0);
+  border: 1px solid rgb(231, 231, 0);
   border-radius: 30px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -116,4 +116,39 @@
 .loginButton:hover {
   background-color: #218838;
   color: #48ff00;
+}
+
+@media (max-width: 768px) {
+  .registerForm {
+    width: 80%;
+    height: auto;
+  }
+
+  .formGroup input {
+    width: 100%;
+  }
+
+  .navcontainer {
+    flex-direction: column;
+  }
+
+  .registerButton,
+  .loginButton {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .registerForm {
+    width: 50%;
+  }
+
+  .formGroup input {
+    max-width: 150%;
+  }
+
+  .registerButton,
+  .loginButton {
+    width: 60%;
+  }
 }
