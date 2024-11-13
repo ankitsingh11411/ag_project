@@ -49,7 +49,11 @@ const Login = () => {
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" required />
           </div>
-          <button type="submit" className={styles.loginButton}>
+          <button
+            type="submit"
+            className={styles.loginButton}
+            onClick={() => (window.location.href = '/homepage')}
+          >
             Log In
           </button>
           <p className={styles.notRegisteredText}>Not registered yet?</p>

@@ -65,7 +65,11 @@ const Register = () => {
               required
             />
           </div>
-          <button type="submit" className={styles.registerButton}>
+          <button
+            type="submit"
+            className={styles.registerButton}
+            onClick={() => (window.location.href = '/homepage')}
+          >
             Sign Up
           </button>
           <p className={styles.alreadyRegisteredText}>Already registered?</p>

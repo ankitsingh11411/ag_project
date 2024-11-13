@@ -54,6 +54,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(231, 231, 0);
+}
+
+.registerForm h1 {
+  width: 100%;
+  border-bottom: 1px solid rgb(231, 231, 0);
 }
 
 .formGroup {
