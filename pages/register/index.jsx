@@ -3,14 +3,18 @@ import styles from './register.module.css';
 import Navbar from '../../components/navbar/navbar.jsx';
 
 const images = [
-  '/triumph1.png',
-  '/triumph2.png',
+  '/mv1.png',
+  '/rr1.png',
+  '/rr2m1k.png',
   '/s1k1.png',
   '/s1k2.png',
   '/s1k3.png',
   '/ducati1.png',
-  '/ducati2.png',
   '/rsv41.png',
+  '/fireblade1.png',
+  '/fireblade3.png',
+  '/zx101.png',
+  '/zx102.png',
 ];
 
 const Register = () => {

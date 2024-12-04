@@ -3,13 +3,13 @@ import styles from './login.module.css';
 import Navbar from '../../components/navbar/navbar.jsx';
 
 const images = [
-  '/zx101.png',
-  '/zx102.png',
-  '/fireblade1.png',
   '/group1.png',
   '/group2.png',
   '/group3.png',
   '/group4.png',
+  '/group5.png',
+  '/group6.png',
+  '/group7.png',
 ];
 
 const Login = () => {

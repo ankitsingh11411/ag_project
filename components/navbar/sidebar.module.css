@@ -4,7 +4,7 @@
   left: -200px;
   width: 200px;
   height: 100%;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.3);
   color: white;
   display: flex;
   flex-direction: column;
@@ -12,10 +12,13 @@
   align-items: center;
   transition: left 0.3s ease;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  backdrop-filter: blur(10px);
 }
 
 .sidebar.visible {
   left: 0;
+  pointer-events: auto;
 }
 
 .navbuttons {
@@ -35,7 +38,7 @@
   height: 10%;
   background-color: #004e12;
   color: rgb(231, 231, 0);
-  border: 1px solid rgb(231, 231, 0);
+
   border-radius: 30px;
 }
 
@@ -54,6 +57,6 @@
   height: 10%;
   background-color: #004e12;
   color: rgb(231, 231, 0);
-  border: 1px solid rgb(231, 231, 0);
+
   border-radius: 30px;
 }

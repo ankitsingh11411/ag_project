@@ -1,5 +1,7 @@
 import Navbar from '../../components/navbar/navbar.jsx';
 import Sidebar from '../../components/navbar/sidebar.jsx';
+import Footer from '../../components/navbar/footer.jsx';
+
 import { useState, useEffect } from 'react';
 import styles from './homepage.module.css';
 
@@ -27,6 +29,7 @@ const Homepage = () => {
     <div className={styles.appcontainer}>
       <Sidebar isVisible={isVisible} />
       <Navbar />
+      <Footer />
     </div>
   );
 };
